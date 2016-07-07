@@ -12,6 +12,8 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
     <context:component-scan base-package="jp.co.kenshu" />
+    <!-- webapp下にjsやcssを配置する際の指定。resources下を全てresourceとみなす -->
+<mvc:resources mapping="/resources/**" location="/resources/" />
     <mvc:annotation-driven />
 
     <!-- 入力値検証の日本語リソース設定 -->
